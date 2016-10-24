@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head lang="he">
+    <meta charset = "utf-8" />
+    <title>Netahim</title>
+    <!-- Angular-->
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <!--Css-->
+    <link rel="stylesheet" href="../css/Recipes.css">
+    <!-- JS -->
+    <script src = "https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src = "../js/scrolling.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+
+  <body dir="rtl" ng-app="Tabs">
+   <!-- My Nav Bar-->
+    <div id="top">
+      <nav>
+        <ul class="topnav" id="myTopnav">
+          <li><a href ="index.html#top">בית</a></li>
+          <li><a href="index.html#partTwo">אודות</a></li>
+          <li><a href="index.html#partSix">צרו קשר</a></li>
+          <li><a href="netahimMenu.html">תפריט</a></li>
+          <li><a href="orders.html">הזמנות</a></li>
+          <li><a href="#addres">המתכונים שלנו</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
+      </nav>
+    <div>
+  <!-- End of Nav Bar-->
+      <br><br><br>
+
+    <!-- Second Bar - adress -->
+    <div id = "addres">
+      <p>Aluf Kalman Magen 3, Tel Aviv-Yafo</p>
+      <p>03-510-9060</p>
+      <p>אלוף קלמן מגן 3, תל אביב</p>
+    </div>
+  <!-- Angular Style -->
+  <div class="bubbles">
+    <style type="text/css">
+     .bubbles .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: white; }
+     .bubbles .nav>li>a {padding: 0.5px;}
+     .bubbles ol, ul{margin: 0px;padding: 0px;}
+      .bubbles .nav-pills>li>a{border-radius: 0px;}
+      .navbar-inverse .navbar-nav>li>a{
+       color: white;}
+    </style>
+    <!-- Angular Tabs -->
+    <section ng-init = "tab = 1">
+        <ul class = "nav nav-pills">
+          <li ng-class="{ active:tab === 1 } ">
+            <a href ng-click="tab = 1">
+              <img src="../imgs/Recapice/matcon5.jpg">
+            </a></li>
+          <li ng-class="{ active:tab === 2 } ">
+            <a href ng-click="tab = 2">
+              <img src="../imgs/Recapice/matcon4.jpg">
+            </a></li>
+          <li ng-class="{ active:tab === 3 } ">
+            <a href ng-click="tab = 3">
+              <img src="../imgs/Recapice/matcon10.jpg">
+            </a></li>
+          <li ng-class="{ active:tab === 4 } ">
+            <a href ng-click="tab = 4">
+              <img src="../imgs/Recapice/matcon3.jpg">
+            </a></li>
+          <li ng-class="{ active:tab === 5 } ">
+            <a href ng-click="tab = 5">
+              <img src="../imgs/Recapice/matcon1.jpg">
+            </a></li>
+          <li ng-class="{ active:tab === 6 } ">
+            <a href ng-click="tab = 6">
+              <img src="../imgs/Recapice/matcon6.jpg">
+            </a></li>
+        </ul>
+        <!-- #1 Recipe Tab --> 
+        <div class="panel" ng-show="tab === 1">
+          <div id="matcon">
+          <div id="headlineLong" class="headline">
+            <h4>דבש ג'ינג'ר</h4>
+              <p>דבש ג'ינג'ר התחיל כתרופת סבתא המועדת לצינון. למי שביקר במזרח הרחוק הטעם של הג'יאליו- ג'ינג'ר למון האני שם שותים אותו בכל מצב, אם זה נגד מחלת גבהים או כדי לחמם את הגוף בימים הקרים, מעורר געגועים וזיכרונות משמחים. כף מצנצנת זו בתוך כוס גדולה של מים חמים מרפאת כל צינון. למשוכללים ולאלה שאוהבים להתפנק במיטת הצינון שלהם שוט של ברנדי או וויסקי ותקומו כמו חדשים. ביום שהתחלתי ללקק את תרופת הפלאים של סבתא בלי קשר לצינון אימצתי את המעדן והיום אני משתמש בו במטבחי ומפזר אותו בתבשילים שונים, במוקפצים, עוגות ולפעמים גם בלי קשר לצינון שותה כוס תה עם דבש וג'ינג'ר.
+              </p>
+              <br><br>
+            </div>
+          </div>
+        </div>
+
+        <!-- #2 Recipe Tab -->
+        <div class="panel" ng-show="tab === 2">
+          <div id="matcon">
+          <div class="headline">
+            <h4>שמן צ'ילי</h4>
+              <p>שמן צ'ילי הוא מעדן המתבל כל אוכל בסתירה של טעם הצ'ילי מצידו האחד ומעוגל על ידי שמן זית מצידו השני. ניתן להוסיף אותו לכל מאכל שבו אתם רוצים גוון חריפות ייחודית כמו זו. אפשר לטגן איתו ואפשר להשתמש בפלפלים לתבשילים שונים. אוהבי טעמי החריף בינינו ימצאו ששמן הצ'ילי שלנו הוא חובה לכל תבשיל וכניסה למטבח למעט קפה אפשר להכין איתו הכל.
+              </p>
+              <br><br>
+            </div>
+          </div>
+        </div>
+        <!-- #3 Recipe Tab -->
+        <div class="panel" ng-show="tab === 3">
+          <div id="matcon">
+           <div id="headlineLong1" class="headline">
+              <h4>קונפיטורת גזר ושקדים</h4>
+                <p>עוגה לשבת (או כל יום אחר)
+                המתכון שאנחנו נביא לכם היום מתאים לכל ריבה אבל קונפיטורת גזר ושקדים שלנו תיתן לעוגה זאת טעם שונה ומעניין. מתכון פשוט זה הוא מתכון של עוגת ילדותי שמצאתי אך לא מזמן בין דפים ירוקים צהובים מוכתמים בשמן של סבתי רוז עליה השלום<br><b> אופן ההכנה:</b><br>שתיים וחצי כוסות קמח<br> כפית אבקת אפייה<br>
+                מאה גרם חמאה<br>שלוש רבעים כוס סוכר<br>חצי כפית מלח<br>את כל החמרים האלה לערבל לזמן קצר עד קבלת בצק נוח<br>לוקחים תבנית מרפדים אותה בנייר אפייה, לוקחים שלוש רבעים מכמות הבצק מרדדים בתחתית התבנית ויוצקים מעל את הריבה. אפשר להוסיף צנצנת נוספת או ריבה אחרת לטעמכם. את הרבע בצק הנותר לרדד, לפרוס לרצועות ולפרוס בצורת שתי וערב, נכניס לתנור ב180-200 מעלות ל30-40 דקות. מומלץ להגיש לצד כוס תה עם חצי תפוז סחוט וכפית דבש או כדור גלידה.
+                </p>
+                <br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <!-- #4 Recipe Tab -->
+        <div class="panel" ng-show="tab === 4">
+          <div id="matcon">
+            <div id="headlineLong2" class="headline">
+              <h4>טחינת סומאק</h4>
+              <p>הסומאק הוא תבלין מדהים שפספס את המטבח הישראלי. צבעו הסגול והעז, טעמיו המעודנים והחמצמצים פותחים בפנינו תבלין שיש בו אפשרויות קולינריות אין סופיות. בואו לא נשאיר אותו בחיק הבצל בשווארמיות.<br>פילה לברק וטחינת סומאק (מנה אחת עד שתי) <br>פילה לברק אחד<br>צנצנת טחינת סומאק של נתחים אחת<br>1 עגבניה<br>שמן זית<br>1 לימון<br>1 פלפל חריף לטעמכם<br>6 שיני שום קלופים פרוסים<br>מלח ים אטלנטי לטעמכם<br>צרור פטרוזיליה<br><b>אופן ההכנה:</b><br>מניחים בתבנית חצי מהעגבניה, חצי מכמות השום, חצי מכמות הפלפל.מניחים מעל את הדג ומפזרים את העגבניה השום והפלפל הנותרים ביחד עם 2-4 פרוסות דקות של לימון.מטפטפים שמן, מיץ לימון, ומתבלים במעט מלח.מכניסים לתנור ב180-200 מעלות ל5-7 דקות.יוצקים מעל את טחינת הסומאק ומחזירים לתנור לעוד 10-15 דקות עד שהטחינה מוקרמת. להגיש עם שפע פטרוזיליה.
+              </p>
+              <br><br><br><br>
+            </div>  
+          </div>
+        </div>
+        <!-- #5 Recipe Tab -->
+        <div class="panel" ng-show="tab === 5">
+          <div id="matcon">
+            <div id="headlineLong1" class="headline">
+              <h4>חרדל הפלפלים חריף</h4>
+                <p>חרדל הפלפלים החריף שלנו זה משהו שאי אפשר לזלזל בו. חרדל דיז'ון מועשר בארבעה סוגי פלפלים שעד נגיעת החרדל בלשון לא שמים אליהם לב וברגע שהם נוגעים בלשון אי אפשר להתעלם מהם. החרדל חריף מאוד ולאוהבי החריף זוהי חגיגה של ממש.<br>חטיפי סינטה בחרדל (10 מנות נשנושים)<br>1/2 קילוגרם סינטה<br>1 צנצנת חרדל פלפלים חריף מבית נתחים<br>100 גרם בריסקט<br>2 מלפפונים חמוצים (מומלץ תוצרת בית)<br>3 כפות קמח<br>1 ביצה<br>5 כפות פירורי לחם פנקו<br>מעט שמן<br><b>אופן ההכנה:</b><br>לפרוש את הסינטה דק למרוח עליה חרדל בשכבה נדיבה ואז להניח עליה פרוסה צרה יותר של בריסקט, פלח מלפפון חמוץ ולגלגל. לטבול בקמח ולנער. לטבול בביצה ולהניח בפירורי לחם ולהדק היטב. לטפטף עליו מספר טיפות שמן להכניס לתנור מחומם בחום של 200-220 מעלות ל7-10 דקות<br> ולהגיש חם ומיד.
+                </p>
+                <br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <!-- #6 Recipe Tab -->
+        <div class="panel" ng-show="tab === 6">
+          <div id="matcon">
+            <div id="headlineLong1" class="headline">
+              <h4>שוש</h4>
+                <p>לכבוד השבוע החדש קבלו את אחד המעדנים שלנו עם מתכון במיוחד לילדים! מעדן ליקריץ אמיתי מחומרים טבעיים. מתאים לעוגות, מנות אחרונות, משקאות חמים או קרים וכמובן לבשר מעושן- בעל טעם דומיננטי.פרפיי ליקריץ לקטנים. <br><b>מצרכים:</b><br>מעדן שוש של נתחים<br>שקדים מעודנים 120 גרם<br>4 ביצים<br>שמנת מתוקה 250<br>תבנית אינגליש קייק<br><b>אופן ההכנה:</b><br>להפריד את החלמונים והחלבונים.להקציף ארבעה חלמונים עד קבלת קצף תפוח להוסיף תוך כדי ערבוב 3/4 צנצנת ליקריץ תוצרת נתחים.במקביל להקציף את השמנת מתוקה ואת החלבונים לקלות את השקדים לאחד את הכל יחדיו להכניס לתבנית אינגליש קייק ולהקפיא למספר שעות.
+                </p>
+                <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
