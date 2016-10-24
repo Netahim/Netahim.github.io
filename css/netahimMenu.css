@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+/* Remove margins and padding from the list */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* My Nav Bar*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B8860B;
+    position: relative;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 2px 2px 15px black;
+    width: 100%
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    padding: 16px 22px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+    font-family:'Alef Hebrew',Arial, verdana, 'sans serif';
+    text-shadow:3px 3px 5px black;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #86620b}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+  }
+}
+
+/* Second Bar - adress */
+#addres{
+    text-align: center;
+    background-color:#5a2d0c;
+    float: left;
+    padding: 20px 5px 5px 5px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 80px;
+    box-shadow: 2px 2px 15px black;
+}
+#addres p{
+    font-size: 16px;
+    font-family:'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:3px 3px 5px black;
+    color:  #f3c6a5;
+    display:inline-block;
+    padding: 10px;
+}
+
+/* Menu Imgs */
+#menu img{
+    width: 650px;
+    height: 900px;
+}
+#menu div{
+    padding-top: 50px;
+    float: left;
+    padding-left: 10px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* Netahim Imgs - Grow pic */
+.grow img {
+    width: 320px;
+    height: 200px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.grow img:hover {
+  width: 350px;
+  height: 230px;
+}
+.pic {
+    height: 200px;
+    width:320px;
+    overflow: hidden;
+    margin: 7px;
+    border: 5px solid white;
+    -webkit-box-shadow: 5px 5px 5px #111;
+    box-shadow: 5px 5px 5px #111;
+    float: left;
+    padding-bottom: 30px;
+}
+
+/* End Of Style */
