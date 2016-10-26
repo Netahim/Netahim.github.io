@@ -5,14 +5,14 @@
     padding: 0;
 }
 
-/* Body Style */
+/* body css */
 body{
     display: block;
-    background: url("../imgs/orders/partTwoBackground.png")no-repeat center center fixed;
-    height: 100%;
+    background: url("../imgs/Recapice/RecapiesFourBackground.jpg");
+    background-size: cover; 
     background-size: cover; 
     -webkit-background-size: cover;
-    height:700px;
+    height: 100%
 }
 
 /* My Nav Bar*/
