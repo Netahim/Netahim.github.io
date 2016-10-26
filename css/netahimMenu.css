@@ -90,8 +90,8 @@ ul.topnav li.icon {display: none;}
 
 /* Menu Imgs */
 #menu img{
-    width: 700px;
-    height: 900px;
+    width: 800px;
+    height: 1000px;
 }
 #menu div{
     padding-top: 50px;
@@ -117,7 +117,6 @@ ul.topnav li.icon {display: none;}
     height: 200px;
     width:320px;
     overflow: hidden;
-    margin: 5px;
     border: 2px solid white;
     -webkit-box-shadow: 5px 5px 5px #111;
     box-shadow: 5px 5px 5px #111;
