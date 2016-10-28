@@ -294,7 +294,7 @@ div #partFive{
     background: url("../imgs/netahim/partFiveBackground.jpg")no-repeat center center fixed;
     background-size: cover; 
     -webkit-background-size: cover;
-    height:950px;
+    height:1000px;
     padding-left: 150px;
     display: inline-block;
 }
