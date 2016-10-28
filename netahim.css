@@ -276,6 +276,9 @@ div #partFour{
  position: relative;
  width:800px; 
  height:450px;
+ padding-top:20px;
+ margin: auto;
+ text-align: center;
 }
 
 .fadein img {
