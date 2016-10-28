@@ -260,6 +260,7 @@ div #partThree{
     color:white;
     font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
     margin: auto;
+    text-shadow:2px 2px 5px black;
 }
 
 /* Start of Part Four */
