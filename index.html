@@ -1,30 +1,294 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
-  </head>
-  <body>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 32.071399, lng: 34.786576};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCczZpXUY8mkSsZiHpNETmyRE2QDNk9178&callback=initMap"
-     type="text/javascript"></script>
-  </body>
+<html >
+	<head>
+		<meta charset = "utf-8" />
+		<title>netahim</title>
+		<!--Css-->
+		<link rel="stylesheet" href="../css/netahim.css">
+		<link rel="stylesheet" 
+		href="../css/mosaic.css" type="text/css" media="screen" />
+		<!--JS-->
+		<script type="text/javascript"
+		src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		<script src = "../js/netahim.js"></script>
+		<script src = "../js/scrolling.js"></script>
+		<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="../js/mosaic.1.0.1.js"></script>
+		<!--Bootstarp-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	</head>
+	
+	<body>
+	 <!-- My Nav Bar-->
+		<div id="top">
+			<nav>
+				<ul class="topnav" id="myTopnav">
+					<li><a href ="#top">בית</a></li>
+					<li><a href="#partTwo">אודות</a></li>
+					<li><a href="#partSix">צרו קשר</a></li>
+					<li><a href="netahimMenu.html">תפריט</a></li>
+					<li><a href="orders.html">הזמנות</a></li>
+					<li><a href="Recipes.html">המתכונים שלנו</a></li>
+					<li class="icon">
+    				<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  					</li>
+				</ul>
+			</nav>
+		<div>
+	<!-- End of Nav Bar-->
+
+			<br><br><br>
+	<!-- Second Bar - adress -->
+		<div id = "addres">
+			<p>Aluf Kalman Magen 3, Tel Aviv-Yafo</p>
+			<p>03-510-9060</p>
+			<p>אלוף קלמן מגן 3, תל אביב</p>
+		</div>
+	<!-- Sarona Logo -->
+		<div id="sarona"><img src="../imgs/netahim/sarona_logo.png"/></div>
+	<!-- Social Media Bookmark Bubbels 
+			<div id="bubbles">
+				<div id="bubbles1">
+					<ul>
+						<li>
+						<a href="https://www.facebook.com/saronadeli/?fref=ts">
+						<img src="../imgs/netahim/gmail.png"/></a>
+						</li>
+					</ul>
+				</div>
+				<div id="bubbles2">
+					<ul>
+						<li>
+						<a href="https://www.facebook.com/saronadeli/?fref=ts">
+							<img src="../imgs/netahim/insta.png"/></a>
+						</li>
+					</ul>
+				</div>
+				<div id="bubbles3">
+					<ul>
+						<li>
+						<a href="https://www.facebook.com/saronadeli/?fref=ts">
+						<img src="../imgs/netahim/facebook.png"/></a>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+
+	<!-- Main Headline -->
+	<div class ="headline">
+		<h1>נְתָחִים</h1>
+		<h2>פָּשׁוּט גּוּרְמה</h2>
+	<!-- Kosher Mark -->
+		<div id="kosher">
+		<p>כשר</p>
+		</div>
+	</div>
+
+	<!-- Start of Part Two -->
+		<div id="partTwo" dir="rtl">
+			<h3 id="headlineabout">הַמִּסְעָדָה</h3>
+				<ul id="headlineaboutUl">
+					<li>
+						<h4 class="headlineabout"><span>01</span>
+							<br><br>מעדניית בשרים</h4>
+							<p>שרקטורי משפחתית בה נעשים בשרים בצורה ביתית ללא חומרים משמרים. במקום, מגוון רחב של נתחים הזוכים לתשובת לב ממוקדת. מושלם לאירוח או סתם בשביל להתפנק.
+							</p>
+					</li>
+					<li>
+						<h4 class="headlineabout"><span>02</span>
+							<br><br>בר כריכים</h4>
+							<p> מגוון כריכים של בשר מופלא הנח בתוך ג׳בטה רכה וחמימה לצד רטבים מיוחדים שהומצאו והוכנו במקום. כמחמאה לכריך יונחו ירקות כובשים בדיוק כמו שסבתא לימדה.
+							</p>
+					</li>
+					<li>
+						<h4 class="headlineabout"><span>03</span>
+							<br><br>הצנצנות</h4>
+							<p> הצנצנות שלנו מכילות מעדנים העשויים בצורה ביתית. מגליז שברירי, דרך מיני מאפים אין סוף לקשת המטעמים שאותם אפשר להכין. שפע של מעדנים בטעמים, ניחוחות ומרקמים המתאימים לכל מדף בכל מטבח.
+						</p>
+					</li>
+				</ul>
+		</div>
+
+	<!-- Start of Part Three -->
+	<div id="partThree" dir="rtl">
+			<h3 id="headlineabout">קְצָת עָלֵינוּ</h3>
+				<p> נתחים היא חלום. חלומו של השף שי עשהאל שלאחר שנים של אהבה לעשיית בשר, פתח מסעדה שדרכה יוכל להפיץ את אהבתו לבשר איכותי, שונה ומושקע. רעיון, שהתבשל כל חייו בזמן שעבד במסעדנות, הסעדה וייעוץ קולונרי. לצד כוס בירה קרירה, השף הגהה מנה כמו שרק הוא יודע מתוחכמת אך פשוטה, מלהיבה אך מנחמת, מקורית אך נוסטלגית. </p>
+	</div>
+
+	<!-- Start of Part Four -->
+		<div id="partFour">
+			<br><br><br>
+    <div class="container">
+         <div class="row">
+            <div class="fadein" class="col-sm-12 text-center" class="padding">
+		<!-- Fadein Gallery -->
+				   <img src="../imgs/netahim/img1.jpg"/>
+				   <img src="../imgs/netahim/img2.jpg"/>
+				   <img src="../imgs/netahim/img3.jpg"/>
+				   <img src="../imgs/netahim/img4.jpg"/>
+				   <img src="../imgs/netahim/img5.jpg"/>
+				   <img src="../imgs/netahim/img6.jpg"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start of Part Five -->
+		<div id="partFive">
+			<h3> הַמַּתְכּוֹנִים שֶׁלָּנוּ</h3>
+		<!-- Recapie #1 -->
+			<div class="inLine">
+					<div class="clearfix"></div>
+					<div class="mosaic-block bar">
+						<a href="../html/Recipes.html" target="_blank" 
+						class="mosaic-overlay">
+							<div class="details">
+								<h4>דבש ג'ינג'ר</h4>
+								<p>למתכון לחץ כאן</p>
+							</div>
+						</a>
+						<div class="mosaic-backdrop">
+						<img src="../imgs/Recapice/matcon5.jpg"/></div>
+					</div>
+			</div>
+			
+		<!-- Recapie #2 -->
+			<div class="inLine">
+				<div class="clearfix"></div>
+				<div class="mosaic-block bar">
+					<a href="../html/Recipes.html" target="_blank" 
+					class="mosaic-overlay">
+						<div class="details">
+							<h4>שמן צ'ילי</h4>
+							<p>למתכון לחץ כאן</p>
+						</div>
+					</a>
+					<div class="mosaic-backdrop">
+					<img src="../imgs/Recapice/matcon4.jpg"/></div>
+				</div>
+			</div>
+		<!-- Recapie #3 -->
+			<div class="inLine">		
+				<div class="clearfix"></div>
+					<div class="mosaic-block bar">
+						<a href="../html/Recipes.html" target="_blank" 
+						class="mosaic-overlay">
+							<div class="details">
+								<h4>קונפיטורת גזר ושקדים </h4>
+								<p>למתכון לחץ כאן</p>
+							</div>
+						</a>
+						<div class="mosaic-backdrop">
+						<img src="../imgs/Recapice/matcon10.jpg"/></div>
+				</div>
+			</div>
+			<!-- Recapie #4 -->
+				<div class="inLine">
+					<div class="clearfix"></div>
+						<div class="mosaic-block bar">
+							<a href="../html/Recipes.html" target="_blank" 
+							class="mosaic-overlay">
+							<div class="details">
+								<h4>טחינת סומאק</h4>
+								<p>למתכון לחץ כאן</p>
+							</div>
+							</a>
+						<div class="mosaic-backdrop">
+						<img src="../imgs/Recapice/matcon3.jpg"/></div>
+					</div>
+				</div>
+			<!-- Recapie #5 -->
+				<div class="inLine">
+					<div class="clearfix"></div>
+						<div class="mosaic-block bar">
+						<a href="../html/Recipes.html" target="_blank" 
+						class="mosaic-overlay">
+							<div class="details">
+								<h4>חרדל פלפלים חריף </h4>
+								<p>למתכון לחץ כאן</p>
+							</div>
+						</a>
+						<div class="mosaic-backdrop">
+						<img src="../imgs/Recapice/matcon1.jpg"/></div>
+					</div>
+				</div>
+			<!-- Recapie #6 -->
+				<div class="inLine">					
+					<div class="clearfix"></div>
+						<div class="mosaic-block bar">
+							<a href="../html/Recipes.html" target="_blank" 
+							class="mosaic-overlay">
+								<div class="details">
+									<h4>שוש</h4>
+									<p>למתכון לחץ כאן</p>
+								</div>
+							</a>
+							<div class="mosaic-backdrop">
+							<img src="../imgs/Recapice/matcon6.jpg"/></div>
+						</div>
+				</div>
+		</div>
+	<!-- End of Part Five -->
+	<!-- Start Of Part Six -->
+		<div id="partSix">
+			<div> 
+				<h3 id="headlineabout">צרוּ קֶשֶׁר</h3>
+					<div id="info">
+						<img src="../imgs/netahim/phone.png"/>
+						<p id ="one">03-510-9060</p>
+					<br><br>
+						<img src="../imgs/netahim/email.png"/>
+						<p id="two"> netahim@gmail.com</p>
+					<br><br>
+						<img src="../imgs/netahim/serch.gif"/>
+						<p><b>איך למצוא אותנו בשרונה מרקט</b> בכניסה לשרונה מרקט נפנה מזרחה אל החנויות מהצד הדרומי</p>
+					</div>
+
+				<br><br><br><br>
+
+				<!--map-->
+				<div style="overflow:hidden;margin:auto;height:350px;max-width:500px;" id="map"></div>
+			    <script>
+			      function initMap() {
+			        var uluru = {lat: 32.071399, lng: 34.786576};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 17,
+			          center: uluru
+			        });
+			        var marker = new google.maps.Marker({
+			          position: uluru,
+			          map: map
+			        });
+			      }
+			    </script>
+			    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCczZpXUY8mkSsZiHpNETmyRE2QDNk9178&callback=initMap"
+			     type="text/javascript"></script>
+				<br><br>
+
+				<div id="goToTop">
+				<a href="#top"><span id ="span2" class="glyphicon glyphicon-arrow-up" 
+				style="color:white; border-radius:50%;"></span></a></div>
+				
+				<br><br><br><br><br><br>
+
+			<div id = "copyright">
+				<p style="text-align:center;">copyright &copy Maya Rottenberg 2016
+				</p>
+			</div>
+	</div>
+	<!-- End Of Part Six -->
+
+		<!-- Recapies Animation -->
+		<script>
+			jQuery(function($){
+				$('.bar').mosaic({
+					animation	:	'slide'
+				});
+		    });
+		</script>
+		<!--scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</body>
 </html>
