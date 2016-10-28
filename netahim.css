@@ -1,0 +1,377 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+*{
+font-family:'Alef Hebrew',Arial, verdana, 'sans serif';
+margin: 0;
+padding: 0;
+}
+/*Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #3a709e;
+  box-shadow: 0px 5px 15px;
+    position: fixed;
+    z-index: 2;
+}
+/* active navbar*/
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: #1e5584;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover{
+  background-color:#1c496f;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+  text-shadow:2px 2px 4px black;
+  font-size: 18px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+  color:white;
+  text-shadow:2px 2px 4px black;
+}
+ul .dropdown-menu {
+  background-color: #1e5584;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover{
+  background-color: #1c496f;  
+}
+
+.btn-info{
+  padding: 4px;
+}
+
+#addres{
+    text-align: center;
+    background-color:#5a2d0c;
+    float: left;
+    padding: 20px 5px 5px 5px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 80px;
+    box-shadow: 2px 2px 15px black;
+}
+
+#addres p{
+    font-size: 16px;
+    font-family:'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:3px 3px 5px black;
+    color:  #f3c6a5;
+    display:inline-block;
+    padding: 10px;
+}
+
+
+div #headline{
+    display: block;
+    background: url("../imgs/netahim/img-topbackground1.png");
+    background-size: cover; 
+    -webkit-background-size: cover;
+    height:600px;
+    }
+
+#headline h1{
+    font-size: 270px;
+    text-align: center;
+    height: 300px;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:5px 5px 8px black;
+    color: white;
+}
+
+#headline h2{
+    font-size: 100px;
+    text-align: left;
+    padding-left: 250px;
+    height: 37px;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:5px 5px 8px black;
+    color: white;
+}
+
+#kosher{
+    margin:0px 10px 100px 20px ;
+    width:60px;
+    height:60px;
+    border:50%;
+    font-size:22px;
+    color:#fff;
+    line-height:60px;
+    text-align:center;
+    box-shadow: 5px 2px 10px black;
+    background:#5a2d0c;
+    border:3px solid;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:3px 3px 5px black;
+}
+
+#sarona img{
+    width: 90px;
+    height: 96px;
+}
+
+#sarona{
+text-align: left;
+height: 10px;
+}
+
+#headline #bubbles1 img{
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+}
+
+div #bubbles1 li{
+    text-decoration: none;
+    text-align: right;
+    position: fixed;    
+    padding-top: 250px;
+    padding-left: 1300px;
+}
+#headline #bubbles2 img{
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+}
+div #bubbles2 li{תפריט אודות 
+    text-decoration: none;
+    text-align: right;
+    position: fixed;    
+    padding-top: 200px;
+    padding-left: 1300px;
+}
+#headline #bubbles3 img{
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+}
+div #bubbles3 li{
+    text-decoration: none;
+    text-align: right;
+    position: fixed;    
+    padding-top: 150px;
+    padding-left: 1300px;
+}
+
+div #partTwo{
+    display: block;
+    background: url("../imgs/netahim/partTwoBackground.png");
+    background-size: cover; 
+    -webkit-background-size: cover;
+    height:600px;
+    padding-top: 150px;
+}
+
+#partTwo ul{
+    text-align: center;
+}
+
+#partTwo h3{
+    padding-bottom: 50px;
+    text-align: center;
+    font-size:80px;
+    color:#cc9966;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:2px 2px 5px black;
+}
+
+span{
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+#partTwo li h4{
+    font-size: 34px;
+    padding-bottom: 30px;
+    text-shadow:1px 1px 2px black;
+}
+
+#headlineaboutUl li{
+    padding: 0px 20px;
+    display: inline-block;
+    width: 330px;
+    text-align: center;
+    font-size:18px;
+    color:#cc9966;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:2px 2px 5px black;
+}
+
+
+div #partThree{
+    display: block;
+    background: url("../imgs/netahim/partThreeBackground.jpg");
+    background-size: cover; 
+    -webkit-background-size: cover;
+    text-align: center;
+    height:700px;
+}
+
+#partThree h3{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size:80px;
+    color: white;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:2px 2px 5px black;
+}
+
+#partThree p{
+    width: 500px;
+    font-size:20px;
+    color:white;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    margin: auto;
+}
+
+div #partFour{
+    display: block;
+    background: url("../imgs/netahim/partFourBackground.jpg");
+    background-size: cover; 
+    -webkit-background-size: cover;
+    height:700px;
+}
+
+.fadein {
+ position: relative;
+ width:900px; 
+ height:550px;
+}
+
+.fadein img {
+    position:absolute;
+    left:0;
+    top:0; 
+    width: 900px;
+    height: 500px;
+    margin: 70px 220px;
+    box-shadow: 5px 2px 20px;
+}
+
+/*.arrows img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+#arrowLeft img{
+    vertical-align: middle;
+    position: absolute;
+    margin: 250px 110px;
+}
+
+#arrowRight img{
+    vertical-align: middle;
+    position: absolute;
+    margin: 250px 1130px;
+} */
+
+div #partFive{
+    display: block;
+    background: url("../imgs/netahim/partFiveBackground.jpg");
+    background-size: cover; 
+    -webkit-background-size: cover;
+    height:800px;
+    padding-left: 150px;
+}
+
+#partFive h3{
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-align: center;
+    font-size:80px;
+    color: white;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:2px 2px 5px black;
+    
+}
+
+.inLine{
+    display: inline-block;
+    float: left;
+}
+
+#partFive img{
+    width: 330px;
+    height: 220px;
+    display: inline-block;
+    float:left;
+}
+
+
+div #partSix{
+    display: block;
+    background: url("../imgs/netahim/partBackground.jpg");
+    background-size: cover; 
+    -webkit-background-size: cover;
+    text-align: center;
+    height:1350px;
+}
+
+
+#partSix h3{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size:80px;
+    color: white;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:2px 2px 5px black;
+}
+
+#partSix img {
+    width: 50px;
+    height: 50px;
+}
+
+#partSix #info {
+    display: inline-block;
+    padding-bottom: 
+}
+
+#partSix p {
+    padding-bottom: 10px;
+    width: 500px;
+    font-size:20px;
+    color:white;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-align: right;
+    margin: auto;
+}
+
+#goToTop{
+    text-align: center;
+}
+
+#goToTop img{
+    width: 40px;
+    height: 40px;
+    padding-top: 50px;
+}
+
+#copyright{
+    text-align: center;
+    background-color: black;
+}
+
+#copyright p{
+    font-size: 16px;
+    font-family:'Alef Hebrew', Arial, verdana, 'sans serif';
+    text-shadow:3px 3px 5px black;
+    color:  #f3c6a5;
+    display:inline-block;
+    padding: 15px;
+    padding-top: 10px;
+}
