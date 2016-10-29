@@ -87,7 +87,10 @@ ul.topnav li.icon {display: none;}
     display:inline-block;
     padding: 10px;
 }
-
+#addres a {
+    color:  #f3c6a5;
+    text-decoration: none;
+}
 /* Part one of the Webpage */
 div .headline{
     display: block;
