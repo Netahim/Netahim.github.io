@@ -359,7 +359,7 @@ div #partSix{
 #partSix #info p #two{
 padding-top:17px;"
 }
-#partSix p {
+#partSix #info p {
     padding-bottom: 10px;
     width: 500px;
     font-size:20px;
@@ -367,6 +367,14 @@ padding-top:17px;"
     font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
     text-align: right;
     margin: auto;
+    text-shadow:2px 2px 5px black;
+}
+#partSix #info a {
+    color:white;
+    text-decoration: none;
+}
+#partSix #info a:hover{
+    text-shadow: 0px 0px;
 }
 #map {
 height: 500px;
@@ -375,6 +383,14 @@ width: 500px;
 /* Go To Top Arrow */
 #goToTop{
     text-align: center;
+}
+#goToTop p{
+    text-align: center;
+    color:white;
+    font-family: 'Alef Hebrew', Arial, verdana, 'sans serif';
+    font-size:16px;
+    margin: auto;
+    padding-top: 10px;
 }
 #span2{
     border:3px solid white;
